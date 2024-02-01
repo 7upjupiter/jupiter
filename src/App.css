@@ -4,7 +4,9 @@
    url("./fonts/Kepler.otf") format("opentype");
   font-weight: bold;
  }
-
+html {
+  background-color: #010101;
+}
 App{
   margin: 0px;
   padding: 0px;
@@ -43,6 +45,15 @@ a {
   text-align: center;
   
 }
+@keyframes floatUpDown {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
 .button {
   margin-top: 20px;
   font-family: "Kepler";
@@ -52,6 +63,7 @@ a {
   color: #fff;
   border: 3px solid #fff;
   margin-bottom: 50px;
+  animation: floatUpDown 2s ease-in-out infinite;
 }
 .buttonHeading {
   font-size: 32px;
@@ -107,6 +119,18 @@ a {
 }
 .caText {
   margin: 0;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.can {
+  animation: fadeIn 1s ease-in-out forwards;
 }
 @media only screen and (max-width: 1500px) {
   .can {
