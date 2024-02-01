@@ -22,7 +22,7 @@ function App() {
               <a href="#tokenomics"><p className="navItem">TOKENOMICS</p></a>
               <a href="#about"><p className="navItem">ABOUT</p></a>
               <div className="socialBlock">
-                <a href="https://t.me/sevenupiter"><img className="social" alt="telegram" src={tg}/></a>
+                <a href="https://t.me/sevenjupiter"><img className="social" alt="telegram" src={tg}/></a>
                 <a href="https://twitter.com/7upJupiter"><img className="social" alt="twitter" src={tw}/></a>
               </div>
             </div>
